@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profile Card</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="card">
+    <img src="" alt="Profile" class="profile-img" />
+    <h2>NARAYANA</h2>
+    <p>Full Stack Developer</p>
+    <p>lakshminarayana9867@gmail.com.com</p>
+
+    <button onclick="toggleInfo()">Show More</button>
+
+    <div id="extra-info">
+      <p>Bhimavaram, Andhra Pradesh</p>
+      <p>Skills: Html, CSS, JavaScript, Java Programming</p>
+    </div>
+  </div>
+
+  <script>
+        function toggleInfo() {
+          const info = document.getElementById("extra-info");
+          const button = document.querySelector("button");
+
+          if (info.style.display === "block") {
+            info.style.display = "none";
+            button.textContent = "Show More";
+          } else {
+            info.style.display = "block";
+            button.textContent = "Show Less";
+          }
+        }
+  </script>
+</body>
+</html>
